@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trip Memories</string>
+    <string name="action_settings">Settings</string>
+    <string name="camera">Launch camera</string>
+    <string name="galerie">Gallery</string>
+    <string name="titlu">Trip Memories</string>
+
+</resources>
