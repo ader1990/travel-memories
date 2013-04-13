@@ -24,18 +24,20 @@ import android.view.Menu;
 
 public class MainActivity extends Activity implements OnClickListener {
 
-	Button apasa,apasa2;
-	TextView text;
+	private Button apasa,apasa2;
+	private TextView text;
 	//keep track of camera capture intent
 	final int CAMERA_CAPTURE = 1;
 	//captured picture uri
 	private Uri picUri;
+	private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         apasa2= (Button) findViewById(R.id.PrimuButon);
+        textView = (TextView) findViewById(R.id.textView);
       //retrieve a reference to the UI button
       		Button captureBtn = (Button)findViewById(R.id.alDoileaButon);
       		//handle button clicks
@@ -77,6 +79,8 @@ public class MainActivity extends Activity implements OnClickListener {
 			if(requestCode == CAMERA_CAPTURE){
 				//get the Uri for the captured image
 				picUri = data.getData();
+				final String picUriCopy=picUri.toString();
+				textView.setText(picUriCopy);
 			}
 		}
 		}

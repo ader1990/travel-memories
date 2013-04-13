@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/fundal"
+    android:background="@drawable/background"
     android:orientation="vertical" >
 
     <Button
@@ -25,5 +25,15 @@
         android:text="@string/galerie"
         android:textColor="#0000CC"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="Hello"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
      
 </RelativeLayout>
