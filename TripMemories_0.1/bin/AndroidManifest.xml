@@ -27,6 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.tripmemories.AlbumActivity"></activity>
+        <activity android:name="com.example.tripmemories.PictureActivity"></activity>
+        <activity android:name="com.example.tripmemories.CreateAlbumActivity"></activity>
     </application>
 
 </manifest>
